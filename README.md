@@ -24,13 +24,11 @@ Here is the essential structure you need for your repository:
 
 ```text
 Lunar-Landing-Hazard-Avoidance/
+
+│└── lunar_hazard_avoidance.py # The main code
 │
-├── notebooks/
-│   └── lunar_hazard_avoidance.ipynb # The main Colab notebook with all the code
+├── result.png                    
 │
-├── results/                        
-│   ├── validation_results.png       # Image of YOLO validation metrics
-│   └── landing_optimization.png     # Image of the distance transform output
 │
 └── README.md                        # This documentation file
 
