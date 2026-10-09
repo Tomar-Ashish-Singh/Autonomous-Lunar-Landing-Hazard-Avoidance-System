@@ -36,52 +36,13 @@ Lunar-Landing-Hazard-Avoidance/
 
 ---
 
-## 🛠️ Step-by-Step Setup Guide
 
-Follow these steps to populate your GitHub repository properly:
 
-### Step 1: Initialize the Repository
 
-1. Go to GitHub and create a new repository named `Lunar-Landing-Hazard-Avoidance`.
-2. Do **not** initialize it with a README, .gitignore, or license (we will add those manually).
-3. Clone the empty repository to your local machine:
-`git clone https://github.com/YourUsername/Lunar-Landing-Hazard-Avoidance.git`
 
-### Step 2: Add the Core Code
 
-1. Inside your cloned folder, create a directory named `notebooks`.
-2. Download your finished Google Colab notebook (`.ipynb` file).
-3. Rename it to `lunar_hazard_avoidance.ipynb` and place it inside the `notebooks` directory.
 
-### Step 3: Add Result Images
 
-1. Create a directory named `results` in the main folder.
-2. Run your Colab notebook to generate the output plots.
-3. Right-click and save the validation metrics plot as `validation_results.png`.
-4. Right-click and save the final spatial optimization plot (showing the safe landing spot) as `landing_optimization.png`.
-5. Place both images inside the `results` folder.
-
-### Step 4: Add the README
-
-1. Create a file named `README.md` in the main directory.
-2. Copy the entire contents of this Markdown block and paste it into `README.md`.
-3. *(Optional)* Update the image paths below in the "Results" section if you named your files differently.
-
-### Step 5: Commit and Push
-
-1. Open your terminal in the repository folder.
-2. Run the following commands:
-
-```bash
-   git add .
-   git commit -m "Initial commit: Added notebook, results, and README"
-   git branch -M main
-   git push -u origin main
-   
-
-```
-
----
 
 ## 🖼️ Visual Results
 
