@@ -164,8 +164,4 @@ Evaluated on the rigorous validation dataset after 15 epochs on an NVIDIA T4 GPU
 
 [LinkedIn](https://www.linkedin.com/in/ashish-tomar-/) | [GitHub](https://github.com/Tomar-Ashish-Singh/)
 
-```eof
 
-The entire file is now contained within a single Markdown block. You should be able to copy the contents directly for your repository.
-
-```
