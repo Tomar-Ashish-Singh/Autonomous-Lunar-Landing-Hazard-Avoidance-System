@@ -46,7 +46,7 @@ Lunar-Landing-Hazard-Avoidance/
 
 ## 🖼️ Visual Results
 
-result.png
+![Model Generation vs Target Samples](results.png)
 
 
 
