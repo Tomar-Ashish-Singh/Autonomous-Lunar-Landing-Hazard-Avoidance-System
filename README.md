@@ -1,6 +1,4 @@
-I will now generate an updated README file that includes a simplified repository architecture and a step-by-step guide for setting up the repository and adding the necessary files and result images.
 
-```markdown:README.md
 # 🌔 Autonomous Lunar Landing Hazard Avoidance System (Space ML)
 
 An end-to-end Computer Vision and Spatial Optimization pipeline designed to solve real-time autonomous descent and hazard avoidance for planetary landers (Artemis / Chandrayaan missions). 
