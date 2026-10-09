@@ -89,14 +89,7 @@ Follow these steps to populate your GitHub repository properly:
 
 *(Ensure you have added your images to the `results/` folder for these to display correctly on GitHub)*
 
-### YOLOv11 Validation Metrics
 
-*(Replace with your actual validation image)*
-
-
-### Spatial Optimization & Safe Landing Zone
-
-*(Replace with your actual distance transform image)*
 
 
 ---
