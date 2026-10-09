@@ -1,4 +1,6 @@
+I will now generate an updated README file that includes a simplified repository architecture and a step-by-step guide for setting up the repository and adding the necessary files and result images.
 
+```markdown:README.md
 # 🌔 Autonomous Lunar Landing Hazard Avoidance System (Space ML)
 
 An end-to-end Computer Vision and Spatial Optimization pipeline designed to solve real-time autonomous descent and hazard avoidance for planetary landers (Artemis / Chandrayaan missions). 
@@ -18,38 +20,86 @@ This project implements an autonomous edge-AI system that:
 
 ---
 
-## 🏛️ Repository Architecture
+## 🏛️ Simplified Repository Architecture
 
-The repository is structured following production MLOps standards, separating data pipelines, training artifacts, notebook environments, and inference scripts:
+Here is the essential structure you need for your repository:
 
 ```text
 Lunar-Landing-Hazard-Avoidance/
 │
-├── dataset/                        # Structured YOLO-format dataset directory
-│   ├── images/
-│   │   ├── train/                  # Procedurally generated training images (Regolith & Craters)
-│   │   └── val/                    # Validation images for telemetry testing
-│   └── labels/
-│       ├── train/                  # YOLO normalized bounding box text files (class x_center y_center w h)
-│       └── val/                    # Validation label text files
-│
 ├── notebooks/
-│   └── lunar_hazard_avoidance.ipynb # Complete, self-contained Google Colab training notebook
+│   └── lunar_hazard_avoidance.ipynb # The main Colab notebook with all the code
 │
-├── runs/
-│   └── detect/
-│       └── Lunar_Lander/           # Training runs, validation confusion matrices, and weight outputs
-│           └── yolo_weights/
-│               └── weights/
-│                   └── best.pt     # Production-trained neural checkpoint
+├── results/                        
+│   ├── validation_results.png       # Image of YOLO validation metrics
+│   └── landing_optimization.png     # Image of the distance transform output
 │
-├── weights/
-│   └── best.pt                     # Exported production weights for edge inference deployment
-│
-├── .gitignore                      # Standard Python and Ultralytics ignore rules
-└── README.md                       # Comprehensive project documentation (This file)
+└── README.md                        # This documentation file
 
 ```
+
+---
+
+## 🛠️ Step-by-Step Setup Guide
+
+Follow these steps to populate your GitHub repository properly:
+
+### Step 1: Initialize the Repository
+
+1. Go to GitHub and create a new repository named `Lunar-Landing-Hazard-Avoidance`.
+2. Do **not** initialize it with a README, .gitignore, or license (we will add those manually).
+3. Clone the empty repository to your local machine:
+`git clone https://github.com/YourUsername/Lunar-Landing-Hazard-Avoidance.git`
+
+### Step 2: Add the Core Code
+
+1. Inside your cloned folder, create a directory named `notebooks`.
+2. Download your finished Google Colab notebook (`.ipynb` file).
+3. Rename it to `lunar_hazard_avoidance.ipynb` and place it inside the `notebooks` directory.
+
+### Step 3: Add Result Images
+
+1. Create a directory named `results` in the main folder.
+2. Run your Colab notebook to generate the output plots.
+3. Right-click and save the validation metrics plot as `validation_results.png`.
+4. Right-click and save the final spatial optimization plot (showing the safe landing spot) as `landing_optimization.png`.
+5. Place both images inside the `results` folder.
+
+### Step 4: Add the README
+
+1. Create a file named `README.md` in the main directory.
+2. Copy the entire contents of this Markdown block and paste it into `README.md`.
+3. *(Optional)* Update the image paths below in the "Results" section if you named your files differently.
+
+### Step 5: Commit and Push
+
+1. Open your terminal in the repository folder.
+2. Run the following commands:
+
+```bash
+   git add .
+   git commit -m "Initial commit: Added notebook, results, and README"
+   git branch -M main
+   git push -u origin main
+   
+
+```
+
+---
+
+## 🖼️ Visual Results
+
+*(Ensure you have added your images to the `results/` folder for these to display correctly on GitHub)*
+
+### YOLOv11 Validation Metrics
+
+*(Replace with your actual validation image)*
+
+
+### Spatial Optimization & Safe Landing Zone
+
+*(Replace with your actual distance transform image)*
+
 
 ---
 
@@ -89,8 +139,6 @@ Because real-time annotated lunar descent imagery is scarce, the pipeline featur
 * **Loss Function:** Complete Intersection over Union (CIoU) loss combined with Distribution Focal Loss (DFL).
 
 
----
-
 ## 📊 Performance & Evaluation Metrics
 
 Evaluated on the rigorous validation dataset after 15 epochs on an NVIDIA T4 GPU:
@@ -114,22 +162,8 @@ Evaluated on the rigorous validation dataset after 15 epochs on an NVIDIA T4 GPU
 
 ---
 
-## 🚀 Quick Start & Reproduction Guide
-
-You can train, evaluate, and export this entire model from scratch in under 5 minutes without any API keys or paid accounts:
-
-1. Open a new notebook in Google Colab.
-2. Set your hardware accelerator to T4 GPU (`Runtime` > `Change runtime type` > `T4 GPU`).
-3. Create a cell and execute the complete pipeline script provided in `notebooks/lunar_hazard_avoidance.ipynb`.
-4. The notebook will automatically:
-* Generate the synthetic lunar training dataset.
-* Fine-tune YOLO11n.
-* Output validation accuracy graphs and telemetry plots.
-* Automatically trigger a direct browser download of your production model weights (`best.pt`).
 
 
-
----
 
 ## 👨‍💻 Author & Maintainer
 
