@@ -85,7 +85,7 @@ Follow these steps to populate your GitHub repository properly:
 
 ## 🖼️ Visual Results
 
-*(Ensure you have added your images to the `results/` folder for these to display correctly on GitHub)*
+result.png
 
 
 
