@@ -88,21 +88,6 @@ Because real-time annotated lunar descent imagery is scarce, the pipeline featur
 * **Neck:** Path Aggregation Network (PANet) ensuring precise scaling for small, distant craters during high-altitude descent.
 * **Loss Function:** Complete Intersection over Union (CIoU) loss combined with Distribution Focal Loss (DFL).
 
-### 3. Spatial Optimization (Distance Transform)
-
-Once bounding boxes are predicted, a binary occupancy grid $M(x, y)$ is generated where detected hazards are masked out with a configurable spacecraft safety margin $p$:
-
-$$M(x, y) = \begin{cases} 0, & \text{if } (x, y) \in \text{Hazard Region } \cup \text{ Padding } \\ 255, & \text{otherwise} \end{cases}$$
-
-The Euclidean Distance Transform function computes the distance $D(x, y)$ from every free pixel to the nearest zero-pixel (hazard boundary):
-
-$$D(x, y) = \min_{(x', y') \text{ where } M(x',y')=0} \sqrt{(x - x')^2 + (y - y')^2}$$
-
-The optimal landing target $(x^*, y^*)$ is selected by finding the global maximum of the distance field:
-
-$$(x^*, y^*, R^*) = \arg\max_{(x,y)} D(x, y)$$
-
-*(Where $R^*$ represents the maximum safe touchdown radius).*
 
 ---
 
@@ -148,11 +133,11 @@ You can train, evaluate, and export this entire model from scratch in under 5 mi
 
 ## 👨‍💻 Author & Maintainer
 
-**Your Name**
+**ASHISH TOMAR**
 
 *AI/ML Engineer & Aerospace Systems Enthusiast*
 
-[LinkedIn](https://www.google.com/search?q=%23) | [GitHub](https://www.google.com/search?q=%23)
+[LinkedIn](https://www.linkedin.com/in/ashish-tomar-/) | [GitHub](https://github.com/Tomar-Ashish-Singh/)
 
 ```eof
 
