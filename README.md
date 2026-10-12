@@ -64,7 +64,7 @@ Lunar-Landing-Hazard-Avoidance/
 
 ![Zero-Shot Real LRO & 3D DEM Validation](reports_and_plots/real_lro_dem_validation.png)
 
-*Figure 1: Zero-shot execution on real NASA lunar nadir imagery (`reports_and_plots/real_lro_dem_validation.png`). **Column 1:** CLAHE-normalized optical feed with `lunar_yolo11n_best` crater detections (red). **Column 2:** 3D Digital Elevation Model (DEM) in meters reconstructed via FFT Photoclinometry. **Column 3:** Local 3D surface slope map ($\theta_{\text{slope}}$ in degrees) enforcing a hard $\le 10^\circ$ spacecraft tip-over cutoff. **Column 4:** Multi-objective GNC touchdown solution (green inscribed clearance circle and white target crosshair).*
+*Figure 1: Zero-shot execution on real NASA lunar nadir imagery (`reports_and_plots/real_lro_dem_validation.png`). **Column 1:** CLAHE-normalized optical feed with `lunar_yolo11n_best` crater detections (red). **Column 2:** 3D Digital Elevation Model (DEM) in meters reconstructed via FFT Photoclinometry. **Column 3:** Local 3D surface slope map ($\theta_{\text{slope}}$ in degrees) enforcing a hard  spacecraft tip-over cutoff. **Column 4:** Multi-objective GNC touchdown solution (green inscribed clearance circle and white target crosshair).*
 
 ---
 
