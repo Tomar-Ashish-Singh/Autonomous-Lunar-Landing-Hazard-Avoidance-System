@@ -70,14 +70,13 @@ Lunar-Landing-Hazard-Avoidance/
 
 ## 📈 Training Telemetry & Convergence Curves
 
-| Training & Validation Convergence (`results.png`) | Precision-Recall Curve (`PR_curve.png`) |
+| Training & Validation Convergence (`results.png`) | Precision-Recall Curve (`BoxPR_curve.png`) |
 | :---: | :---: |
-| ![Training Results](training_metrics/results.png) | ![PR Curve](training_metrics/PR_curve.png) |
+| ![Training Results](training_metrics/results.png) | ![PR Curve](training_metrics/BoxPR_curve.png) |
 
-| Normalized Confusion Matrix (`confusion_matrix_normalized.png`) | F1-Confidence Harmonic Curve (`F1_curve.png`) |
+| Normalized Confusion Matrix (`confusion_matrix_normalized.png`) | F1-Confidence Harmonic Curve (`BoxF1_curve.png`) |
 | :---: | :---: |
-| ![Confusion Matrix](training_metrics/confusion_matrix_normalized.png) | ![F1 Curve](training_metrics/F1_curve.png) |
-
+| ![Confusion Matrix](training_metrics/confusion_matrix_normalized.png) | ![F1 Curve](training_metrics/BoxF1_curve.png) |
 ---
 
 ## 🔬 System Workflow & Dual-Stream GNC Architecture
